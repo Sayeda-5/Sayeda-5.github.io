@@ -1,12 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Hello world, Adding the HTML based portfolio here.
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="portfolio.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Sidra Syed | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+        <h1>SIDRA SYED</h1>
+        <ul class="navigation">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><button class="submit-btn" download="SIDRA_SYED_RESUME"><a href="https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view" class="nav-link" download="SIDRA_SYED_RESUME">RESUME</a></button></li>
+        </ul>
+        <button class="burger-menu" id="burger-menu">
+          <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+  </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <img
+          src="resorce/sidrapic.png"
+          alt="sidra-syed"
+          loading="lazy"
+          class="hero-img"
+        />
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Tech-savvy JAVA Backend Developer proficient in creating
+            servers and databases for functionality, designing,
+            developing APIs and responsive websites.
+            Analytical and precise professional
+            hands-on HTML+CSS, Java and Javascript taking
+            charge of front and back-end web development.
+            Ready for taking challenging roles.
+          </p>
+        </div>
+  </section>
+    <!-- More about -->
+    <section class="more-about">
+        <h2>More About Me</h2>
+        <p>
+          para1
+        </p>
+        <p>
+          para2
+        </p>
+        <p>
+         para3
+        </p>
+      </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+        <h2 class="skill-header">Tech Skills</h2>
+  
+        <div class="skills-wrapper">
+          <div class="first-set animate__animated animate__pulse">
+            <img
+              src="resorce/techskill/java.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="resorce/techskill/mysql-logo.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="resorce/techskill/spring-logo.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="resorce/techskill/javascript.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="resorce/techskill/css3.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="resorce/techskill/html-5.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+          </div>
+        </div>
+      </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+        <h2 class="projects-title">Projects</h2>
+        <div class="projects-container">
+          <div class="project-container project-card">
+            <img
+              src="resorce/projects/optimun.png"
+              alt="expense-tracker"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">OPTIMUM FITNESS</h3>
+            <p class="project-details">
+              des
+            </p>
+            <a href="https://singular-babka-0ed0b3.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Sayeda-5-envious-society-6497-" target="_blank"><img src="resorce/github.png" alt=""></a></a>
+          </div>
+          <div class="project-container project-card">
+            <img
+              src="resorce/projects/meera.png"
+              alt="netflic-clone"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">MEERA</h3>
+            <p class="project-details">
+              des
+            </p>
+            <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank"><img src="resorce/github.png" alt=""></a></a>
+          </div>
+          <!-- <div class="project-container project-card">
+            <img
+              src="assets/images/greenyEarth.png"
+              alt="greeny-earth"
+              loading="lazy"
+              class="project-pic"
+            />
+            <h3 class="project-title">Greeny Earth</h3>
+            <p class="project-details">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+              ratione vel inventore labore commodi modi quos culpa aut saepe!
+              Alias!
+            </p>
+            <a href="#" target="_blank" class="project-link">Check it Out</a>
+          </div> -->
+        </div>
+
+        <!-- copyright section -->
+        <footer>
+          <p class="copy">&copy; Copyright 2023</p>
+          <p class="copy">
+            Built with &#x2661; by
+            <a href="https://www.linkedin.com/in/sidra-syed/" target="_blank">SIDRA SYED</a>
+          </p>
+    </footer>
+      </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+        <!--  -->
+        
+
+      </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+        
+        <a href="https://www.instagram.com/syedsidra00/" target="_blank"
+          ><img
+            src="resorce/instagram.png"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://www.linkedin.com/in/sidra-syed/" target="_blank"
+          ><img
+            src="resorce/linkedin-.png"
+            alt="Linkedin"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a href="https://github.com/Sayeda-5" target="_blank"
+          ><img src="resorce/github.png" alt="Github" class="socicon"
+        /></a>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="resorce/circled-up-2.png"
+        class="socicon up-arrow"
+        alt="scroll-up"
+    /></i> 
+
+    <!-- Website scripts -->
+    <script src="porfolio.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
