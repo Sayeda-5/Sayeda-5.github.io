@@ -1,6 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+/* class="navigation" */
+/* class="hero" */
 /* Variables */
+body{
+  margin: auto,0;
+}
+#home{
+  margin: auto 50px;
+}
 :root {
   --font-family: "Roboto", sans-serf;
   --normal-font: 400;
@@ -17,7 +26,9 @@
   --transition: 0.3s;
 }
 /* Variables end */
-
+selector {
+  property: var(--variable-name);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -86,7 +97,7 @@ nav {
     cursor: pointer;
     display: none;
   }
-  .hero {
+  #about section{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,9 +105,21 @@ nav {
     max-width: 68.75rem;
     margin: auto;
   }
-  .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
+  /* #about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  } */
+  .home-img{
+    height: 20.5rem;
+    width: 20.5rem;
+  }
+  #user-detail-intro{
+    height: 500px;
+    align-items: center;
   }
   
   .bio {
@@ -129,10 +152,12 @@ nav {
     padding: 0.4rem;
   }
   .skills {
-    max-width: 68.75rem;
+    display: grid;
+    grid-template-columns: repeat();
+    max-width: 75.75rem;
     margin: auto;
     text-align: center;
-    margin-top: 2.5rem;
+    margin-top: 5.5rem;
   }
   
   .skill-header {
@@ -140,15 +165,15 @@ nav {
   }
   
   .skills-wrapper img {
-    padding: 1.25rem;
+    padding: 1.30rem;
   }
   
   .icon {
-    width: 11.875rem;
-    height: 11.25rem;
+    width: 30.875rem;
+    height: 30.25rem;
   }
   .icon-card {
-    background-color: #fff;
+    background-color: #FFFBE9;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
@@ -166,7 +191,8 @@ nav {
   }
   
   .projects-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-content: center;
   }
@@ -193,6 +219,7 @@ nav {
   }
   
   .project-card {
+   
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
@@ -285,7 +312,7 @@ nav {
     width: 3rem;
     height: 3rem;
   }
-  /* nav ul {
+  nav ul {
     position: fixed;
     background-color: var(--bg-color);
     flex-direction: column;
@@ -295,7 +322,7 @@ nav {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
-  } */
+  }
 
    nav ul li {
     margin: 8px;
@@ -307,13 +334,13 @@ nav {
   nav ul.show {
     transform: translateX(0);
   }
-  .hero {
+  .about section {
     margin-top: -4rem;
     flex-direction: column;
     gap: 0;
   }
 
-  .hero img {
+  .home-img {
         height: 37.5rem;
         width: 30rem;
     }
@@ -343,7 +370,7 @@ nav {
   }
 
   .project-container {
-    width: 20.875rem;
+    width: 30.875rem;
   }
   .contact-form-container {
     max-width: 23.75rem;
@@ -353,25 +380,54 @@ nav {
     nav {
         padding: 1.5rem 1rem;
       }
+      .project-container {
+        width: 17.875rem;
+      }
+      .projects-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr)
+      }
+    
   }
-  @media screen and (max-width: 420px) {
-    .hero img {
+  @media screen and (max-width: 720px) {
+    .about {
+      margin-top: -4rem;
+      flex-direction: column;
+      gap: 0;
+    }
+    .home-img {
       height: 37.5rem;
       width: 23rem;
     }
+    .more-about {
+      margin-top: 2rem;
+      padding: 1rem 3.5rem;
+    }
   
+    .more-about h2 {
+      text-align: center;
+    }
+  
+    .more-about p {
+      text-align: justify;
+    }
     .bio {
       width: 18.3rem;
     }
+    .icon {
+      width: 5.875rem;
+      height: 5.25rem;
+    }
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2,1fr)
+    }
   
     .project-container {
-      width: 17.875rem;
+      width: 20.875rem;
     }
   
     .contact-form-container {
-      max-width: 17.75rem;
+      max-width: 27.75rem;
     }
   } 
-/* selector {
-    property: var(--variable-name);
-  } */

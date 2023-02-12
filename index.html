@@ -33,7 +33,7 @@
     <!-- Navbar -->
     <nav>
         <h1>SIDRA SYED</h1>
-        <ul class="navigation">
+        <ul id="nav-menu">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -44,13 +44,16 @@
           <ion-icon class="bars" name="menu-outline"></ion-icon>
         </button>
   </nav>
+  <section id="home">
+
     <!-- Hero Section -->
-    <section class="hero" id="about">
+    <section class="about section" id="about">
         <img
           src="resorce/sidrapic.png"
           alt="sidra-syed"
           loading="lazy"
           class="hero-img"
+          id="user-detail-intro"
         />
         <div class="bio animate__animated animate__shakeX">
           <h2 class="bio-title">About Me</h2>
@@ -158,21 +161,19 @@
             </p>
             <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank"><img src="resorce/github.png" alt=""></a></a>
           </div>
-          <!-- <div class="project-container project-card">
+          <div class="project-container project-card">
             <img
-              src="assets/images/greenyEarth.png"
-              alt="greeny-earth"
+              src="resorce/projects/optimun.png"
+              alt="expense-tracker"
               loading="lazy"
               class="project-pic"
             />
-            <h3 class="project-title">Greeny Earth</h3>
+            <h3 class="project-title">coming soon</h3>
             <p class="project-details">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              ratione vel inventore labore commodi modi quos culpa aut saepe!
-              Alias!
+              des
             </p>
-            <a href="#" target="_blank" class="project-link">Check it Out</a>
-          </div> -->
+            <a href="https://singular-babka-0ed0b3.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Sayeda-5-envious-society-6497-" target="_blank"><img src="resorce/github.png" alt=""></a></a>
+          </div>
         </div>
 
         <!-- copyright section -->
@@ -190,11 +191,13 @@
         <!--  -->
         
 
-      </section>
+      
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-        
+        <a id="contact-github" href="https://github.com/Sayeda-5" target="_blank"
+          ><img src="resorce/github.png" alt="Github" class="socicon"
+        /></a>
         <a href="https://www.instagram.com/syedsidra00/" target="_blank"
           ><img
             src="resorce/instagram.png"
@@ -202,15 +205,26 @@
             loading="lazy"
             class="socicon"
         /></a>
-        <a href="https://www.linkedin.com/in/sidra-syed/" target="_blank"
+        <a id="contact-linkedin" href="https://www.linkedin.com/in/sidra-syed/" target="_blank"
           ><img
             src="resorce/linkedin-.png"
             alt="Linkedin"
             loading="lazy"
             class="socicon"
         /></a>
-        <a href="https://github.com/Sayeda-5" target="_blank"
-          ><img src="resorce/github.png" alt="Github" class="socicon"
+        <a id="contact-phone" href="call:7014564363" target="_blank"
+          ><img
+            src="resorce/phone.png"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
+        /></a>
+        <a id="contact-email" href="mailto:sidrasyed199930@gmail.com"  target="_blank"
+          ><img
+            src="resorce/email.png"
+            alt="Instagram"
+            loading="lazy"
+            class="socicon"
         /></a>
 
     <!-- Scroll to top -->
@@ -220,10 +234,11 @@
         class="socicon up-arrow"
         alt="scroll-up"
     /></i> 
+  </section>
 
     <!-- Website scripts -->
     <script src="porfolio.js"></script>
-
+  </section>
     <!-- Ion icons scripts -->
     <script
       type="module"
