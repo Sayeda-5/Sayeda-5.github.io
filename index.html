@@ -1,65 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="portfolio.css" />
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Sidra Syed | Web Developer</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidra Syed | Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
+    integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   </head>
 
-  <body>
-    <!-- Navbar -->
-    <nav>
-        <h1>SIDRA SYED</h1>
-        <ul id="nav-menu">
-          <li><a href="#home" class="nav-link home">Home</a></li>
-          <li><a href="#about" class="nav-link about">About</a></li>
-          <li><a href="#skills" class="nav-link skills">Skills</a></li>
-          <li><a href="#projects" class="nav-link projects">Projects</a></li>
-          <li><a href="#contact" class="nav-link contact">Contact</a></li>
-          <li><button class="submit-btn" download="SIDRA_SYED_RESUME"><a href="https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view" class="nav-link resume" download="SIDRA_SYED_RESUME">RESUME</a></button></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
-  </nav>
-  <section id="home">
+<body>
 
-    <!-- Hero Section -->
-    <section class="about section" id="about">
-        <img
-          src="resorce/sidrapic.png"
-          alt="sidra-syed"
-          loading="lazy"
-          class="hero-img"
-          id="user-detail-intro"
-        />
-        <div class="bio animate__animated animate__shakeX">
-          <h2 class="bio-title">About Me</h2>
-          <p class="bio-text">
-            Tech-savvy JAVA Backend Developer proficient in creating
+  <!-- ------------------HOME SECTION START------------------------ -->
+
+
+  <div id="header">
+    <div class="container">
+      <nav id="nav-menu">
+        <h1 id="sid">SIDRA SYED</h1>
+       
+        <ul id="sidemenu">
+          <li><a class="nav-link home" href="#home">HOME</a></li>
+          
+          <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
+          <li><a class="nav-link skills" href="#about">About</a></li>
+          <!-- <li><a class="nav-link about" href="#about">ABOUT</a></li> -->
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#githubs">GITHUB</a></li>
+          <li><a  class="nav-link contact" href="#contact">CONTACT</a></li>
+          <li><a id="resume-button-1" class="btn btn2" href="file/Sidra_Syed_Resume_13-02-2023-23-20-43.pdf" class="nav-link resume" target="_blank" download="SIDRA_SYED_RESUME">RESUME</a></li>
+          
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars burger-menu" id="burger-menu" onclick="openmenu()"></i>
+      </nav>
+     
+      <div id="home" class="header-text">
+        <p>JAVA BACKEND DEVELOPER</p>
+        <h1>Hi,I'm <span> SIDRA</span> <br>Syed from India</h1>
+       
+            <a id="resume-button-2" class="submit-btn" href="https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link" target="_blank" download="">RESUME</a>
+      </div>
+
+    </div>
+  </div>
+  <!-- *********About********* -->
+  <!-- <div id="about" class="about section">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/profile.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <h1 id="user-detail-name">Sidra</h1>
+          <h2 id="user-detail-intro">
+        I am a Developer who know HTML, CSS, JAVASCRIPT,JAVA,SPRING BOOT ,HIBERNATE,MAVEN,MYSQL
+      </h2>
+          <p>Tech-savvy JAVA Backend Developer proficient in creating
             servers and databases for functionality, designing,
             developing APIs and responsive websites.
             Analytical and precise professional
@@ -67,201 +72,369 @@
             charge of front and back-end web development.
             Ready for taking challenging roles.
           </p>
+         
         </div>
-  </section>
-    <!-- More about -->
-    <section class="more-about">
-        <h2>More About Me</h2>
-        <p>
-          para1
-        </p>
-        <p>
-          para2
-        </p>
-        <p>
-         para3
-        </p>
-      </section>
 
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-        <h2 class="skill-header">Tech Skills</h2>
-  
-        <div class="skills-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <img
-              src="resorce/techskill/java.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="resorce/techskill/mysql-logo.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="resorce/techskill/spring-logo.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-  
-          <div class="second-set animate__animated animate__pulse">
-            <img
-              src="resorce/techskill/javascript.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="resorce/techskill/css3.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="resorce/techskill/html-5.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
+  </div> -->
+  <!-- <section class="about section" id="about">
+    <img
+      src="resorce/sidrapic.png"
+      alt="sidra-syed"
+      loading="lazy"
+      class="hero-img"
+      id="user-detail-intro"
+    />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Tech-savvy JAVA Backend Developer proficient in creating
+        servers and databases for functionality, designing,
+        developing APIs and responsive websites.
+        Analytical and precise professional
+        hands-on HTML+CSS, Java and Javascript taking
+        charge of front and back-end web development.
+        Ready for taking challenging roles.
+      </p>
+    </div>
+</section> -->
+<section class="hero about" id="about">
+    <img
+      src="resorce/sidrapic.png"
+      alt="sidra-syed"
+      loading="lazy"
+      class="hero-img"
+    />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Tech-savvy JAVA Backend Developer proficient in creating
+        servers and databases for functionality, designing,
+        developing APIs and responsive websites.
+        Analytical and precise professional
+        hands-on HTML+CSS, Java and Javascript taking
+        charge of front and back-end web development.
+        Ready for taking challenging roles.
+      </p>
+    </div>
+</section>
 
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-        <h2 class="projects-title">Projects</h2>
-        <div class="projects-container">
-          <div class="project-container project-card">
-            <img
-              src="resorce/projects/optimun.png"
-              alt="expense-tracker"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">OPTIMUM FITNESS</h3>
-            <p class="project-details">
-              des
-            </p>
-            <a href="https://singular-babka-0ed0b3.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Sayeda-5-envious-society-6497-" target="_blank"><img src="resorce/github.png" alt=""></a></a>
-          </div>
-          <div class="project-container project-card">
-            <img
-              src="resorce/projects/meera.png"
-              alt="netflic-clone"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">MEERA</h3>
-            <p class="project-details">
-              des
-            </p>
-            <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank"><img src="resorce/github.png" alt=""></a></a>
-          </div>
-          <div class="project-container project-card">
-            <img
-              src="resorce/projects/optimun.png"
-              alt="expense-tracker"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">coming soon</h3>
-            <p class="project-details">
-              des
-            </p>
-            <a href="https://singular-babka-0ed0b3.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Sayeda-5-envious-society-6497-" target="_blank"><img src="resorce/github.png" alt=""></a></a>
-          </div>
-          <div class="project-container project-card">
-            <img
-              src="resorce/projects/meera.png"
-              alt="netflic-clone"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title">MEERA</h3>
-            <p class="project-details">
-              des
-            </p>
-            <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank"><img src="resorce/github.png" alt=""></a></a>
-          </div>
-        </div>
+  <!-- -------------------------------------Skills------------------------------- -->
+
+
+  <div id="skills skills-wrapper" >
+    <div class="container skills-card ">
+      <h1 class="sub-title skill-header">My Skills</h1>
+      <div class="skills-list">
         
+        <div class="skill first-set animate__animated animate__pulse">
+          <img class="skills-card-img"
+          src="resorce/techskill/java.png"
+            alt="">
+            
+        </div>
+        <div class="skill first-set animate__animated animate__pulse">
+          <img 
+          src="resorce/techskill/mysql-logo.png" alt=""
+          loading="lazy"
+              class="icon icon-card">
+          
+        </div>
+        <div class="skill first-set animate__animated animate__pulse">
+          <img class="skills-card-img"
+          src="resorce/techskill/spring-logo.png"
+            alt=""
+            loading="lazy"
+              class="icon icon-card">
+            <!-- <h5 class="skills-card-name">Spring Boot</h5> -->
+        </div>
+        <div class="skill first-set animate__animated animate__pulse">
+          <img class="skills-card-img" src="resorce/techskill/javascript.png" alt=""
+          loading="lazy"
+              class="icon icon-card">
+        </div>
+        <div class="skill first-set animate__animated animate__pulse">
+          <img class="skills-card-img" src="resorce/techskill/css3.png" alt=""
+          loading="lazy"
+              class="icon icon-card">
+          <!-- <h5 class="skills-card-name">Spring Boot</h5> -->
+        </div>
 
-        <!-- copyright section -->
-        <footer>
-          <p class="copy">&copy; Copyright 2023</p>
-          <p class="copy">
-            Built with &#x2661; by
-            <a href="https://www.linkedin.com/in/sidra-syed/" target="_blank">SIDRA SYED</a>
+        <div class="skill first-set animate__animated animate__pulse">
+          <img class="skills-card-img" src="resorce/techskill/html-5.png" 
+          alt=""
+          loading="lazy"
+              class="icon icon-card">
+          
+          <!-- <h5 class="skills-card-name">Spring Boot</h5> -->
+        </div>
+
+        <div class="skill first-set animate__animated animate__pulse">
+          <img class="skills-card-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/800px-Amazon_Web_Services_Logo.svg.png"
+            alt=""loading="lazy"
+            class="icon icon-card">
+            <!-- <h5 class="skills-card-name">Spring Boot</h5> -->
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- -----------------------------projects section----------------------------- -->
+  <!-- <section class="projects" id="projects"> 
+    
+      <div class="project-container project-card">
+        <img
+          src="resorce/projects/meera.png"
+          alt="netflic-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">MEERA</h3>
+        <p class="project-details">
+          des
+        </p>
+        <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank"><img src="resorce/github.png" alt=""></a></a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="resorce/projects/optimun.png"
+          alt="expense-tracker"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">coming soon</h3>
+        <p class="project-details">
+          des
+        </p>
+        <a href="https://singular-babka-0ed0b3.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Sayeda-5-envious-society-6497-" target="_blank"><img src="resorce/github.png" alt=""></a></a>
+      </div>
+      <div class="project-container project-card">
+        <img
+          src="resorce/projects/meera.png"
+          alt="netflic-clone"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">MEERA</h3>
+        <p class="project-details">
+          des
+        </p>
+        <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank"><img src="resorce/github.png" alt=""></a></a>
+      </div>
+    </div>
+</section> -->
+
+<div id="projects">
+  <div class="container">
+    <h1 class="sub-title">PROJECTS</h1>
+    <div class="project-list">
+      <div class="project project-card">
+        <!-- <img src="resorce/projects/optimun.png" alt=""> -->
+        <img
+          src="resorce/projects/optimun.png"
+          alt="expense-tracker"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h2 class="project-title">OPTIMUM FITNESS</h2>
+        <p class="project-details">
+         
+        </p>
+        <a href="https://singular-babka-0ed0b3.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Sayeda-5-envious-society-6497-" target="_blank">
+          <img src="resorce/github.png" alt=""></a></a>
+      
+      </div>
+      <div class="project project-card">
+        <!-- <img src="resorce/projects/optimun.png" alt=""> -->
+        <img
+          src="resorce/projects/meera.png"
+          alt="expense-tracker"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h2 class="project-title">MEERA</h2>
+        <p class="project-details">
+         
+        </p>
+        <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank">
+          <img src="resorce/github.png" alt=""></a></a>      
+      </div>
+      </div>
+      <div class="project-list">
+        <div class="project project-card">
+          <!-- <img src="resorce/projects/optimun.png" alt=""> -->
+          <img
+            src="resorce/projects/optimun.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h2 class="project-title">OPTIMUM FITNESS</h2>
+          <p class="project-details">
+           
           </p>
-    </footer>
-      </section>
-
-    <!-- Contact section -->
-    <section class="contact" id="contact">
-        <!--  -->
+          <a href="https://singular-babka-0ed0b3.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Sayeda-5-envious-society-6497-" target="_blank">
+            <img src="resorce/github.png" alt=""></a></a>
         
-
+        </div>
+        <div class="project project-card">
+          <!-- <img src="resorce/projects/optimun.png" alt=""> -->
+          <img
+            src="resorce/projects/meera.png"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h2 class="project-title">MEERA</h2>
+          <p class="project-details">
+           
+          </p>
+          <a href="https://flourishing-donut-99e4a4.netlify.app/" target="_blank" class="project-link"><img src="resorce/projects/netlify.png" alt="deployed link"><a href="https://github.com/Sayeda-5/Stark-cellar-4099" target="_blank">
+            <img src="resorce/github.png" alt=""></a></a>      
+        </div>
+        </div>
+  
       
 
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-        <a id="contact-github" href="https://github.com/Sayeda-5" target="_blank"
-          ><img src="resorce/github.png" alt="Github" class="socicon"
-        /></a>
-        <a href="https://www.instagram.com/syedsidra00/" target="_blank"
-          ><img
-            src="resorce/instagram.png"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a id="contact-linkedin" href="https://www.linkedin.com/in/sidra-syed/" target="_blank"
-          ><img
-            src="resorce/linkedin-.png"
-            alt="Linkedin"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a id="contact-phone" href="call:7014564363" target="_blank"
-          ><img
-            src="resorce/phone.png"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"
-        /></a>
-        <a id="contact-email" href="mailto:sidrasyed199930@gmail.com"  target="_blank"
-          ><img
-            src="resorce/email.png"
-            alt="Instagram"
-            loading="lazy"
-            class="socicon"
-        /></a>
+    </div>
+  </div>
 
-    <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
+</div>
+
+
+  <!-- ---------------------Github section-------------------------- -->
+
+  <div id="githubs">
+    <div class="container">
+      <h1 class="sub-title">Github</h1>
+      <div class="github-list">
+        <div class="github">
+          <img
+            src="https://camo.githubusercontent.com/25a452e6436e4da16b7d2b9aceaf8be866a5beca94b759419c21638cce8c46bb/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d7361796564612d352673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374"
+            alt="">
+
+        </div>
+        <div class="github" id="tops">
+          <img src="https://camo.githubusercontent.com/60547564c91ae951b6fabf1351d86a2d345ddb3685f9cf98241b55034a629189/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7361796564612d352673686f775f69636f6e733d74727565266c6f63616c653d656e" alt="">
+
+        </div>
+
+        <div class="github">
+          <img src="https://camo.githubusercontent.com/7b23db82d88772ebbf36687819c11731c38d11b83b06e88ffe3462e850f8d4ad/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d7361796564612d3526" alt="">
+
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- -----------------------contact-form section--------------------- -->
+<!-- Social accounts - Fixed to the right -->
+<div class="socials">
+    <a id="contact-github" href="https://github.com/Sayeda-5" target="_blank"
+      ><img src="resorce/github.png" alt="Github" class="socicon"
+    /></a>
+    <a href="https://www.instagram.com/syedsidra00/" target="_blank"
+      ><img
+        src="resorce/instagram.png"
+        alt="Instagram"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a id="contact-linkedin" href="https://www.linkedin.com/in/sidra-syed/" target="_blank"
+      ><img
+        src="resorce/linkedin-.png"
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a id="contact-phone" href="call:7014564363" target="_blank"
+      ><img
+        src="resorce/phone.png"
+        alt="Instagram"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a id="contact-email" href="mailto:sidrasyed199930@gmail.com"  target="_blank"
+      ><img
+        src="resorce/email.png"
+        alt="Instagram"
+        loading="lazy"
+        class="socicon"
+    /></a>
+
+<!-- Scroll to top --> 
+<i class="scroll-up" id="scroll-up"
       ><img
         src="resorce/circled-up-2.png"
         class="socicon up-arrow"
         alt="scroll-up"
-    /></i> 
+    /></i>
+</div>
+
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-right">
+          <form action="mailto:sidrasyed199930@gmail.com">
+            <input type="text" name="Name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="your message"></textarea>
+            <button type="submit" class="btn btn2">submit</button>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+<!-- --------------------resume-------------- -->
+  <section id="resume">
+    <a id="resume-button-2" class="submit-btn" href="file/Sidra_Syed_Resume_13-02-2023-23-20-43.pdf" target="_blank" download="">RESUME</a>
   </section>
 
-    <!-- Website scripts -->
-    <script src="porfolio.js"></script>
+  <div class="copyright">
+    <p class="copy">&copy; Copyright 2023</p>
+    <p class="copy">
+      Built with &#x2661; by
+      <a href="https://www.linkedin.com/in/sidra-syed/" target="_blank">SIDRA SYED</a>
+    </p>
+</div>
+<script>
+  var sidemeu = document.getElementById("sidemenu");
+  function openmenu() {
+    sidemeu.style.right = "0";
+
+  }
+  function closemenu() {
+    sidemeu.style.right = "-200px";
+
+  }
+</script>
+
+
+
+
+<script src="porfolio.js"></script>
   </section>
     <!-- Ion icons scripts -->
     <script
       type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js">
+    </script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    </script>
+</body>
 </html>
+
+
