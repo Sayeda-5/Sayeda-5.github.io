@@ -3,10 +3,10 @@ document.getElementById('resume-button-1').addEventListener("click",()=>{
   window.open("https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link", "_blank");
 })
 
-document.getElementById('resume-link-1').addEventListener("click",()=>{
-  console.log("OPENinig.....")
-  window.open("https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link", "_blank");
-})
+// document.getElementById('resume-link-1').addEventListener("click",()=>{
+//   console.log("OPENinig.....")
+//   window.open("https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link", "_blank");
+// })
 
 document.getElementById('resume-button-2').addEventListener("click",()=>{
   console.log("OPENinig.....")
@@ -14,8 +14,7 @@ document.getElementById('resume-button-2').addEventListener("click",()=>{
 })
 
 
-    var sidemeu = document.getElementById("sidemenu");
-    ul.classList.toggle("show")
+    var sidemeu = document.getElementById("sidemenu")
     function openmenu() {
       sidemeu.style.right = "20%";
 
@@ -53,19 +52,19 @@ scrollUp.addEventListener("click", () => {
 //     behavior: "smooth",
 //   });
 // });
-burger.addEventListener("click", () => {
-    ul.classList.toggle("show");
-  });
+// burger.addEventListener("click", () => {
+//     ul.classList.toggle("show");
+//   });
 // Close hamburger menu when a link is clicked
 
 // Select nav links
-const navLink = document.querySelectorAll(".nav-link");
+// const navLink = document.querySelectorAll(".nav-link");
 
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
+// navLink.forEach((link) =>
+//   link.addEventListener("click", () => {
+//     ul.classList.remove("show");
+//   })
+// );
 
 // import { AwesomeButtonShare } from "react-awesome-button";
 
