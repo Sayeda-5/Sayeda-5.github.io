@@ -67,14 +67,14 @@ navLink.forEach((link) =>
   })
 );
 
-import { AwesomeButtonShare } from "react-awesome-button";
+// import { AwesomeButtonShare } from "react-awesome-button";
 
-const Buttons = () => {
-  return (
-    <><AwesomeButtonShare type="github" href="https://github.com/username">GitHub</AwesomeButtonShare><AwesomeButtonShare type="linkedin" href="https://linkedin.com/username">LinkedIn</AwesomeButtonShare><AwesomeButtonShare type="instagram" href="https://linkedin.com/username">Instagram</AwesomeButtonShare></>
-  );
-}
-GitHub
-Instagram
+// const Buttons = () => {
+//   return (
+//     <><AwesomeButtonShare type="github" href="https://github.com/username">GitHub</AwesomeButtonShare><AwesomeButtonShare type="linkedin" href="https://linkedin.com/username">LinkedIn</AwesomeButtonShare><AwesomeButtonShare type="instagram" href="https://linkedin.com/username">Instagram</AwesomeButtonShare></>
+//   );
+// }
+// GitHub
+// Instagram
 
-LinkedIn
+// LinkedIn
