@@ -28,15 +28,22 @@
         <h1 id="sid">SIDRA SYED</h1>
        
         <ul id="sidemenu">
-          <li><a class="nav-link home" href="#home">HOME</a></li>
+<!-- <li><a href="#header">HOME</a></li> -->
+<li><a class="nav-link about" href="#about">ABOUT</a></li>
+<!-- <li><a class="nav-link skills" href="#skills">SKILLS</a></li> -->
+<li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
+<li><a href="#githubs">GITHUB</a></li>
+<li><a  class="nav-link contact" href="#contact">CONTACT</a></li>
+           <!--  -->
+          <li><a class="nav-link home" href="#header">HOME</a></li>
           
           <li><a class="nav-link skills" href="#skills">SKILLS</a></li>
-          <!-- <li><a class="nav-link about" href="#about">About</a></li> -->
-          <li><a class="nav-link about" href="#about">ABOUT</a></li>
+          <li><a class="nav-link about" href="#about">About</a></li>
+          <!-- <li><a class="nav-link about" href="#about">ABOUT</a></li> -->
           <li><a class="nav-link projects" href="#projects">PROJECTS</a></li>
           <li><a class="nav-link githubs" href="#githubs">GITHUB</a></li>
           <li><a  class="nav-link contact" href="#contact">CONTACT</a></li>
-          <li><a id="resume-button-1" class="btn btn2" href="file/Sidra_Syed_Resume_13-02-2023-23-20-43.pdf" class="nav-link resume" target="_blank" download="SIDRA_SYED_RESUME">RESUME</a></li>
+          <li><a id="resume-button-1" class="nav-link resume btn btn2" href="file/Sidra_Syed_Resume_13-02-2023-23-20-43.pdf" class="nav-link resume" target="_blank" download="SIDRA_SYED_RESUME">RESUME</a></li>
           
           <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
@@ -47,7 +54,7 @@
         <p>JAVA BACKEND DEVELOPER</p>
         <h1>Hi,I'm <span> SIDRA</span> <br>Syed from India</h1>
        
-            <a id="resume-button-2" class="submit-btn" href="https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link" target="_blank" download="">RESUME</a>
+            <a id="resume-button-1" class="submit-btn" href="https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link" target="_blank" download="">RESUME</a>
       </div>
 
     </div>
@@ -105,12 +112,17 @@
       src="resorce/sidrapic.png"
       alt="sidra-syed"
       loading="lazy"
-      class="hero-img"
+      class="hero-img home-img"
+      id="user-detail-intro"
     />
     <div class="bio animate__animated animate__shakeX">
       <h2 class="bio-title">About Me</h2>
+      <h1 id="user-detail-name">I'm Sidra Syed from Udaipur, Rajasthan</h1>
+      <h2 id="user-detail-intro">
+        Tech-savvy JAVA Backend Developer
+      </h2>
       <p class="bio-text">
-        Tech-savvy JAVA Backend Developer proficient in creating
+        proficient in creating
         servers and databases for functionality, designing,
         developing APIs and responsive websites.
         Analytical and precise professional
@@ -124,7 +136,7 @@
   <!-- -------------------------------------Skills------------------------------- -->
 
 
-  <div id="skills skills-wrapper" >
+  <div id="skills" >
     <div class="container skills-card ">
       <h1 class="sub-title skill-header">Skills</h1>
       <div class="skills-list">
@@ -314,18 +326,18 @@
     <div class="container">
       <h1 class="sub-title">Github</h1>
       <div class="github-list">
-        <div class="github">
+        <div class="github" id="github-streak-stats">
           <img
             src="https://camo.githubusercontent.com/25a452e6436e4da16b7d2b9aceaf8be866a5beca94b759419c21638cce8c46bb/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d7361796564612d352673686f775f69636f6e733d74727565266c6f63616c653d656e266c61796f75743d636f6d70616374"
             alt="">
 
         </div>
-        <div class="github" id="tops">
+        <div class="github" id="tops github-top-langs" >
           <img src="https://camo.githubusercontent.com/60547564c91ae951b6fabf1351d86a2d345ddb3685f9cf98241b55034a629189/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d7361796564612d352673686f775f69636f6e733d74727565266c6f63616c653d656e" alt="">
 
         </div>
 
-        <div class="github">
+        <div class="github" id="github-stats-card">
           <img src="https://camo.githubusercontent.com/7b23db82d88772ebbf36687819c11731c38d11b83b06e88ffe3462e850f8d4ad/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d7361796564612d3526" alt="">
 
         </div>
@@ -356,7 +368,7 @@
         loading="lazy"
         class="socicon"
     /></a>
-    <a id="contact-phone" href="call:7014564363" target="_blank"
+    <a id="contact-phone" href="7014564363"
       ><img
         src="resorce/phone.png"
         alt="Instagram"
