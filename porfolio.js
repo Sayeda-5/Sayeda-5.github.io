@@ -13,7 +13,9 @@ document.getElementById('resume-button-2').addEventListener("click",()=>{
   window.open("https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link", "_blank");
 })
 
-
+function resume(){
+  window.open("https://drive.google.com/file/d/1LAbM0M6p6gAnPcrRtr3NTB6E1IlI2fpY/view?usp=share_link", "_blank");
+}
     var sidemeu = document.getElementById("sidemenu")
     function openmenu() {
       sidemeu.style.right = "20%";
