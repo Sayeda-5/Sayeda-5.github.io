@@ -15,10 +15,10 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: ;
-  --primary-color: #F6C6EA;
-  --secondary-color: #c493e5bd;
-  --primary-shadow: #CDF0EA;
-  --secondary-shadow: #f1b4f8;
+  --primary-color: #865439;
+  --secondary-color:#3C2A21;
+  --primary-shadow:  #865439;
+  --secondary-shadow:  #3C2A21;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -39,7 +39,7 @@ html {
 }
 body {
   /* background-color: #FAF4; */
-  color: #F6C6EA;
+  color: #3C2A21;
 }
 a {
   text-decoration: none;
@@ -59,7 +59,7 @@ a:hover {
   position: fixed;
   width: 100%;
   padding: 15px 0;
-  background: rgb(95, 31, 44);
+  background: #E5E5CB;
   font-family: sans-serif;
 }
 nav{
@@ -75,7 +75,7 @@ nav{
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  background-color: #CDF0EA
+  background-color: #FFF1F1;
 }
 
 
@@ -127,7 +127,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
   font-size: 18px;
   position: relative;
@@ -137,7 +137,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: crimson;
+  background: #FCDEC0;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -165,7 +165,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #ff004f;
+  color: #9c6937;
 }
 
 
@@ -257,7 +257,7 @@ min-height: 500px; */
   content: '';
   width: 0;
   height: 3px;
-  background: #ff004f;
+  background: #9c6937;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -277,7 +277,7 @@ min-height: 500px; */
 }
 
 .tab-contents ul li span {
-  color: #b54769;
+  color: #9c6937;
   font-size: 14px;
 }
 
@@ -481,7 +481,7 @@ footer {
 }
 
 .contact-left:p i {
-  color: #ff004f;
+  color: #9c6937;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -502,13 +502,13 @@ footer {
 }
 
 .social-icons a:hover {
-  color: #ff004f;
+  color: #9c6937;
   transform: translateY(-5px);
 }
 #resume-button-2{
   display: inline-block;
   /* background: #f1b4f8; */
-  color: #b54769;
+  color: #9c6937;
   /* width: 100%; */
   padding: 10px;
   margin: 10px 0;
@@ -521,12 +521,12 @@ footer {
 }
 .btn.btn2 {
   display: inline-block;
-  background: #f1b4f8;
-  color: #b54769;
+  background: #9c6937;
+  color: #FCDEC0;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #F6C6EA;
+  background-color: #C68B59;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -546,7 +546,7 @@ footer {
   border-radius: 5px;
 }
 #resume-button-1{
-  background-color:white;
+  /* background-color: ; */
   border: 2px solid var(--primary-color);
   cursor: pointer;
   color: var(--primary-color);
@@ -613,8 +613,8 @@ form .btn2:hover{
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  color: #b54769;
-  background-color: #CDF0EA;
+  color: #C68B59;
+  /* background-color: #CDF0EA; */
   font-weight: 300;
   margin-top: 20px;
 
@@ -662,7 +662,7 @@ nav .fas {
   }
 
   nav ul {
-      background: #fb9ee3;
+      background: #C68B59;
       position: fixed;
       top: 0;
       right: -200px;
