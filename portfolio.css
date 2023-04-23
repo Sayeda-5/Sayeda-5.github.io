@@ -15,10 +15,10 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: ;
-  --primary-color: #865439;
-  --secondary-color:#3C2A21;
-  --primary-shadow:  #865439;
-  --secondary-shadow:  #3C2A21;
+  --primary-color: rgb(250, 164, 250);
+  --secondary-color: plum;
+  --primary-shadow:  rgb(250, 164, 250);
+  --secondary-shadow: plum;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -38,8 +38,9 @@ html {
   font-size: xx-large;
 }
 body {
-  /* background-color: #FAF4; */
-  color: #3C2A21;
+  background-color: black;
+  color: pink;
+  
 }
 a {
   text-decoration: none;
@@ -59,7 +60,7 @@ a:hover {
   position: fixed;
   width: 100%;
   padding: 15px 0;
-  background: #E5E5CB;
+  background: black;
   font-family: sans-serif;
 }
 nav{
@@ -75,7 +76,7 @@ nav{
   padding: 1.5rem 3.5rem;
   background-color: var(--bg-color);
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
-  background-color: #FFF1F1;
+  background-color: black;
 }
 
 
@@ -137,7 +138,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background: #FCDEC0;
+  background: ;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -165,7 +166,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #9c6937;
+  color: crimson;
 }
 
 
@@ -189,7 +190,9 @@ min-height: 500px; */
 .hero img {
   height: 37.5rem;
   width: 37.5rem;
+ 
 }
+
 
 .bio {
   width: 25rem;
@@ -352,6 +355,7 @@ min-height: 500px; */
   text-align: center;
   margin: auto;
 } */
+
 .project {
   background-color: var(--bg-color);
   padding: 32px 0;
@@ -363,7 +367,7 @@ min-height: 500px; */
   height: 60%;
 }
 
-.projects-container {
+.projects-container>div>div {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
@@ -374,7 +378,7 @@ min-height: 500px; */
   margin-bottom: 1rem;
 }
 
-.project-container {
+.project-container>div {
   text-align: center;
   width: 21.875rem;
   padding: 1rem;
@@ -393,14 +397,13 @@ min-height: 500px; */
 
 .project-card {
  
-  background-color: #fff;
+  background-color: black;
+  color: plum;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
 }
-
-
 /* ----------------------github section---------------------------------- */
 #githubs {
   padding: 50px 0;
@@ -521,12 +524,12 @@ footer {
 }
 .btn.btn2 {
   display: inline-block;
-  background: #9c6937;
+  /* background: #CDF0EA; */
   color: #FCDEC0;
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #C68B59;
+  /* background-color: #C68B59; */
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -613,7 +616,7 @@ form .btn2:hover{
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  color: #C68B59;
+  /* color: ; */
   /* background-color: #CDF0EA; */
   font-weight: 300;
   margin-top: 20px;
