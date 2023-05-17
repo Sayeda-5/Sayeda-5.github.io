@@ -324,6 +324,10 @@ min-height: 500px; */
   display: block;
   height: 20vh;
 }
+.skills-name{
+  font-size: larger;
+  text-align: center;
+}
 /*            */
 
 
@@ -451,6 +455,10 @@ min-height: 500px; */
   padding: 20px;
   margin: 10px;
 }
+.project-links>a>img{
+  width: 40px;
+}
+
 /* ----------------------github section---------------------------------- */
 #githubs {
   padding: 50px 0;
